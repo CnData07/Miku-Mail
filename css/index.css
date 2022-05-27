@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.666;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+.logo{
+    height: 75px;
+    margin-left: 30px;
+    margin-top: -14px;
+}
+.header {
+    background-color: white;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
+    height: 76px;
+    border-bottom: 1px solid rgb(218, 218, 218);
+}
+
+.header-main {
+    width: 1080px;
+    height: 76px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+}
+
+.header-main img {
+    padding: 15px 0;
+}
+
+.nav {
+    float: right;
+}
+
+.nav ul {
+    height: 75px;
+    padding-top: 14px;
+    list-style: none;
+}
+
+ul>li {
+    line-height: 60px;
+    float: left;
+    padding: 0 18px;
+}
+
+li.page {
+    padding: 0;
+}
+
+li.login a {
+    color: rgb(148, 147, 147);
+    font-size: 14px;
+}
+
+li.button {
+    padding: 0;
+}
+
+li button {
+    font-size: 14px;
+    padding: 6px 28px;
+    background-color: #25d4c7;
+    border-radius: 30px;
+    border: none;
+    color: white;
+}
+
+li:hover,
+.onclick {
+    cursor: pointer;
+    border-bottom: 4px solid #25d4c7;
+    color: #25d4c7;
+}
+
+li.button:hover,
+li.login:hover,
+li.page:hover {
+    border-bottom: none;
+}
+
+/* 侧边栏 */
+.aside {
+    margin-top: -174px;
+    width: 62px;
+    position: fixed !important;
+    top: 50%;
+    right: 10px;
+    z-index: 999;
+}
+
+.tip {
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    height: 60px;
+    border: 1px solid rgb(223, 223, 223);
+}
+
+.hidd {
+    display: none;
+}
+
+.tip:hover .tip-text,
+.tip:hover {
+    display: block;
+    background: #25d4c7;
+    color: #fff;
+}
+
+.tip:hover .hidd,
+.tip:hover .tip-hidd {
+    display: block;
+}
+
+.tip-text {
+    padding: 4px 0;
+    color: #bcbcbb;
+}
+
+.tip-phone {
+    background-image: url(../images/aside-contact.png);
+    background-position: -155px -2px;
+}
+
+.tip-buy {
+    animation: 1s buy 0s infinite;
+}
+
+@keyframes buy {
+    0% {
+        border-color: #fff;
+        box-shadow: 0 0 0 1px #fff, 0 0 0 2px #bcbcbb;
+        background: #f7f7f7;
+    }
+
+    20% {
+       
+
+        border-color: #f7f7ef;
+        box-shadow: 0 0 0 1px #f7f7f7, 0 0 0 2px #cac8c7;
+        background: #f7f7f7;
+    }
+
+    40% {        
+        width: 61px;
+        border-color: #e7e7de;
+        box-shadow: 0 0 0 1px #efefe7, 0 0 0 2px #cac8c7;
+        background: #f7f7f7;
+    }
+
+    60% {
+        border-color: #d6ced0;
+        box-shadow: 0 0 0 1px #e7e7de, 0 0 0 2px #d6d6c6;
+        background: #f7f7f7;
+    }
+
+    80% {
+        border-color: #bcbcbb;
+        background: #fff;
+    }
+}
+
+.tip-hidd {
+    background: url(../images/aside-contact.png) 0 -10px;
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    left: -150px;
+    height: 40px;
+    padding: 0 20px 0 0;
+    width: 135px;
+    line-height: 40px;
+}
+
+.tip-help {
+    line-height: 60px;
+    background-image: url(../images/aside-contact.png);
+    background-position: -83px -128px;
+}
+
+
+.tip-my img {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #25d4c7;
+    position: absolute;
+    top: -80px;
+    left: -64px;
+
+}
+
+/* main */
+.main {
+    position: relative;
+    top: 76px;
+}
+
+/* 页尾 */
+.footer {
+    position: relative;
+    top: 70px;
+    width: 100%;
+    height: 140px;
+    background-color: #666666;
+}
+
+.footer-main {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    width: 1080px;
+    padding: 38px 0;
+    margin: 0 auto;
+}
+
+.footer-main a {
+    font-size: 12px;
+    color: white;
+}
+
+.copy {
+    height: 25px;
+    line-height: 25px;
+}
+
+.copy img {
+    position: relative;
+    top: 5px;
+}

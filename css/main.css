@@ -1,0 +1,381 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
+}
+
+a {
+    font-size: 12px;
+    color: #666666;
+    text-decoration: none;
+}
+
+div {
+    width: 1080px;
+}
+
+
+.content {
+    width: 100%;
+}
+
+#slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 520px;
+}
+
+#pic li {
+    background: url(../images/index/banner_20170725.jpg) no-repeat center;
+    width: 100%;
+    height: 520px;
+}
+
+#pic li:nth-child(2) {
+    background: url(../images/index/banner_20170824.jpg) no-repeat center;
+}
+
+#pic li:nth-child(3) {
+    background: url(../images/index/banner_20180827.jpg) no-repeat center;
+}
+
+#pic li:nth-child(4) {
+    background: url(../images/index/banner_20190311.jpg) no-repeat center;
+}
+#slider:hover #arrow-left,
+#slider:hover #arrow-right{
+opacity: 1;
+}
+#list {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 3;
+    width: 78px;
+    margin-left: -39px;
+}
+
+#list li {
+    cursor: pointer;
+    background: url(../images/dot.png) no-repeat -18px 2px;
+    margin: 0 5px 0 0;
+    float: left;
+    width: 12px;
+    height: 12px;
+}
+
+#list .on,
+#list li:hover{
+    background: url(../images/dot.png) no-repeat 0 2px;
+}
+
+#arrow-left,
+#arrow-right {
+    opacity: 0;
+    cursor: pointer;
+    background: url(../images/asset\ 35.png);
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 15%;
+    height: 119px;
+    width: 41px;
+}
+
+#arrow-right {
+    left:85%;
+    background: url(../images/asset\ 36.png);
+}
+
+/* 优势 */
+.advantage {
+    text-align: center;
+    width: 1080px;
+    height: 189px;
+    padding: 65px 0;
+}
+
+.advantage>div {
+    float: left;
+    width: 180px;
+    height: 180px;
+}
+
+.advantage p {
+    font-size: 18px;
+    color: #25d4c7;
+    line-height: 42px;
+}
+
+/* 购买 */
+.buy {
+    position: relative;
+    line-height: 1.666;
+    color: #666;
+    font-size: 24px;
+    width: 100%;
+    height: 207px;
+    background-color: #f1f3f4;
+    padding: 35px 0;
+}
+
+.buy::after {
+    position: absolute;
+    content: '';
+    display: block;
+    bottom: -16px;
+    left: 50%;
+    margin-left: -12px;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 16px solid #f1f3f4;
+}
+
+.buy .buy-title {
+    width: 1080px;
+    line-height: 1.666;
+    color: #666;
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 1px solid #dce6ec;
+}
+
+.buy .buy-title span {
+    font-size: 46px;
+    color: #25d4c7;
+    font-weight: 700;
+}
+
+.buy-it {
+    text-align: left;
+    width: 414px;
+    height: 105px;
+    padding: 25px 0 0 50px;
+    background: url(../images/index/calculator.png) 0 30px no-repeat;
+}
+
+.buy-it p:nth-child(2) {
+    font-size: 16px;
+}
+
+.buy-it p input {
+    position: relative;
+    top: -5px;
+    width: 175px;
+    height: 30px;
+}
+
+.buy-it p span {
+    color: #25d4c7;
+}
+
+.buy-it p a {
+    margin-left: 78px;
+    border-radius: 5px;
+    color: #1cc779;
+    padding: 0 10px;
+    border: 1px solid #1cc779;
+    font-size: 16px;
+}
+
+/* 免费试用 */
+.reg {
+    height: 363px;
+    padding: 70px 0;
+}
+
+.reg p {
+    font-size: 24px;
+    line-height: 38px;
+    color: #666;
+    text-align: center;
+}
+
+.reg form {
+    padding-top: 15px;
+    width: 460px;
+    height: 301px;
+    margin: auto;
+}
+
+form div {
+    position: relative;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 22px;
+}
+
+form input {
+    width: 238px;
+    height: 16px;
+    padding: 5px 10px;
+}
+
+form input[name=code] {
+    width: 120px;
+}
+
+form input[type=button] {
+    width: 104px;
+    height: 30px;
+    background-color: #e7eff6;
+    border: 1px solid #99acbc;
+    color: #63829d;
+    font-size: 14px;
+    margin-left: 10px;
+
+}
+
+.yes {
+    width: 470px;
+}
+
+.yes span {
+    color: #25d4c7;
+    font-weight: 700;
+}
+
+form input[type=checkbox] {
+    width: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+form input[type=submit] {
+    background-color: #1cc779;
+    color: white;
+    font-size: 22px;
+    border: none;
+    float: right;
+    width: 358px;
+    height: 50px;
+}
+
+/* 信赖伙伴 */
+.pro-case {
+    text-align: center;
+    padding: 70px 0;
+    width: 100%;
+    height: 456px;
+    background-color: #f1f3f4;
+
+}
+
+.pro-case h3 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.pro-case p {
+    color: #666666;
+    font-size: 24px;
+    margin: 18px 0;
+}
+
+.pro-case ul {
+    height: 300px;
+    width: 1080px;
+}
+
+.pro-case ul li {
+    padding: 8px 0;
+    text-align: center;
+    float: left;
+    border: 1px solid #fff;
+    width: 214px;
+    height: 58px;
+    line-height: 58px;
+}
+
+.more {
+    margin-top: 34px;
+}
+
+/* 页尾1 */
+.foot-1 {
+    color: #666666;
+    padding: 45px 0;
+    height: 194px;
+}
+
+.foot-1>div {
+    width: 289px;
+    float: left;
+    height: 194px;
+    border-right: 1px solid #c7c7c7;
+}
+
+.foot-1>div:nth-child(2) {
+    width: 270px;
+    padding: 0 50px;
+}
+
+.foot-1>div:last-child {
+    width: 368px;
+    padding: 0 0 0 50px;
+    border: none;
+}
+
+.foot-1 .tit {
+    text-align: left;
+    font-size: 24px;
+    width: 270px;
+    height: 28px;
+    margin: 0 0 10px 0;
+}
+
+.foot-1 ul li {
+    width: 270px;
+    margin: 0;
+    line-height: 1.6666;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.foot-1 ul li a {
+    font-size: 14px;
+}
+
+.foot-1 p {
+    color: #25d4c7;
+    text-align: right;
+    font-size: 12px;
+}
+
+.pre-p {
+    padding-right: 35px;
+}
+
+/* 页尾2 */
+.foot-2 {
+    padding: 50px 0;
+    background-color: #f1f3f4;
+    width: 100%;
+    height: 128px;
+}
+
+.foot-2 .item div {
+    width: 278px;
+    float: left;
+    padding-right: 29px;
+}
+
+.foot-2 .item div .tit {
+    height: 27px;
+    font-weight: 700;
+    color: #666;
+}
+
+.foot-2 .item div ul li {
+    float: left;
+    margin-right: 15px;
+}
+
+.foot-2 .item div ul li p {
+    height: 25px;
+}
