@@ -107,6 +107,7 @@ $(function(){ //页面加载完毕才执行
         }
     }
     timer = setInterval(nextPlay,2000);
+
     //鼠标经过banner，停止定时器,离开则继续播放
     $('.banner').mouseenter(function(){
         clearInterval(timer);
@@ -117,10 +118,12 @@ $(function(){ //页面加载完毕才执行
         //左右箭头隐藏(淡出)
         $('.banner i').fadeOut();
     });
+
     //播放下一张
     $('.banner .right').click(function(){
         nextPlay();
     });
+    
     //返回上一张
     $('.banner .left').click(function(){
         prevPlay();
